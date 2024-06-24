@@ -41,8 +41,10 @@
 require 'capistrano/setup'
 require 'capistrano/deploy'
 require 'capistrano/rails'
+require 'capistrano/rvm'
 require 'capistrano/puma'
 install_plugin Capistrano::Puma
+install_plugin Capistrano::Puma::Daemon
 require 'capistrano/yarn'
 require 'capistrano/bundler'
 require 'capistrano/scm/git'
