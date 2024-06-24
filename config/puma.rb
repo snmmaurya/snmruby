@@ -44,4 +44,4 @@ require 'puma/daemon'
 daemonize
 
 # Allow puma to be restarted by `bin/rails restart` command.
-plugin :tmp_restart
+# plugin :tmp_restart
