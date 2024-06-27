@@ -25,7 +25,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, false 
 set :deploy_to, "/var/www/snmruby"
 set :puma_conf, "#{shared_path}/config/puma.rb"
-set :puma_service_unit_name, "puma_#{fetch(:application)}_production"
+set :puma_service_unit_name, "puma_#{fetch(:application)}_production.service"
 
 
 namespace :puma do
